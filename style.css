@@ -1,0 +1,298 @@
+@import url("https://fonts.googleapis.com/css2?family=Varela+Round&display=swap");
+
+:root {
+	--primary: #2196f3;
+	--error: #d7010190;
+}
+
+* {
+	font-family: "Varela Round", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	box-sizing: border-box;
+}
+
+a {
+	text-decoration: none;
+	cursor: pointer;
+}
+
+body {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #fff;
+	background: url(https://upload.wikimedia.org/wikipedia/en/thumb/0/0c/Cube_The_Movie_Poster_Art.jpg/220px-Cube_The_Movie_Poster_Art.jpg)
+		no-repeat center center;
+	/*background: url(https://static.wikia.nocookie.net/cube-movies/images/8/89/MV5BMTAyMjI4NTEzNTNeQTJeQWpwZ15BbWU3MDY3NjIxMjE%40._V1_SX640_SY720_.jpg) no-repeat center;*/
+	background-size: cover;
+	width: 100vw;
+	height: 100vh;
+	overflow: hidden;
+}
+body:before {
+	content: "";
+	position: absolute;
+	z-index: -1;
+	background: url(https://upload.wikimedia.org/wikipedia/en/thumb/0/0c/Cube_The_Movie_Poster_Art.jpg/220px-Cube_The_Movie_Poster_Art.jpg)
+		no-repeat center center;
+	background-size: cover;
+	width: 100vw;
+	height: 100vh;
+	filter: blur(5px);
+	overflow: hidden;
+}
+
+.quizContainerPanel {
+	text-align: center;
+	width: 450px;
+	margin: 0 auto;
+	background: #253137e0;
+	padding: 1em;
+	border-radius: 1em;
+	min-height: 580px;
+}
+
+h2 {
+	color: var(--primary);
+	font-size: 30px;
+	font-weight: bold;
+	text-shadow: 0 -1px 0 #0008, 0 1px 0 #fff8;
+}
+
+.quizIntroPanel {
+	width: 100%;
+	height: 300px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	justify-content: space-evenly;
+}
+.quizIntroPanel p {
+	float: left;
+	width: 100%;
+}
+.quizUserName {
+	font-size: 22px;
+}
+.quizPanelResult {
+	display: none;
+}
+.navQuestion {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+/*
+.navQuestion:before {
+content: "Question ";
+color:var(--primary); 
+margin-right: 0.5em;
+}
+*/
+.navQuestion span {
+	padding: 0.2em;
+	color: #fff;
+	min-width: 25px;
+	text-align: center;
+	min-height: 25px;
+	line-height: 19px;
+	background: #607d8b;
+	margin: 0 1px;
+	border-radius: 5px;
+}
+/*
+.navQuestion span:first-of-type {
+color: var(--primary);
+padding: 0;
+}
+*/
+.navQuestion span.quizActiveQuestion {
+	background: var(--primary) !important;
+	border-radius: 2px;
+}
+.quizPanel {
+	display: none;
+	color: #d9d9d9;
+	font-size: 18px;
+	margin-bottom: 10px;
+}
+.quizPanel strong {
+	font-size: 17px;
+}
+.quizPanel .question {
+	color: #a6a6a6;
+}
+.quizPanel .question.quizSelected {
+	color: var(--primary);
+}
+.quizResponses {
+	margin-top: 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	padding: 0 85px 0 0;
+}
+.quizResponses .question {
+	margin: 0 1em 0 0;
+}
+.quizResponses .question input {
+	cursor: pointer;
+}
+.quizValidationLayer {
+	margin-top: 20px;
+}
+.quizValidationLayer a.quizValidate {
+	color: #fff;
+	padding: 8px;
+	background: var(--primary);
+	cursor: pointer;
+}
+.quizPanel .question.thisCorrect {
+	color: var(--error);
+	color: #d70101;
+}
+.quizContinue {
+	background: var(--primary);
+	color: #fff;
+	padding: 8px;
+	cursor: pointer;
+	border-radius: 2px;
+}
+.quizPlayGame {
+	background: var(--primary);
+	color: #fff;
+	padding: 8px;
+	cursor: pointer;
+}
+.quizReload {
+	background: var(--primary);
+	color: #fff;
+	padding: 8px;
+	cursor: pointer;
+	margin-bottom: 20px;
+	display: inline-block;
+	border-radius: 2px;
+}
+
+.quizReload:hover {
+	background: #fff;
+	color: #212121;
+}
+.quizPanel .quizCorrect,
+.quizPanel .quizFail {
+	background: var(--primary);
+	font-size: 1.2em;
+	margin-bottom: 1em;
+	padding: 1em 0.5em;
+	color: #fff;
+	border-radius: 2px;
+}
+
+.quizPanel .quizFail {
+	background: var(--error);
+}
+.quizTextResult {
+	color: var(--primary);
+	font-size: 1.2em;
+	margin-bottom: 1em;
+}
+
+.quizCorrect {
+	--primary: #4caf5090;
+}
+.quizCorrect small {
+	color: #c8ff88;
+}
+
+.quizFail {
+	--primary: #df0000;
+}
+.quizFail small {
+	color: #fb877f;
+	position: relative;
+	margin-bottom: 5px;
+	display: inline-block;
+}
+
+span.error {
+	background: var(--error);
+	color: #fff;
+}
+
+span.success {
+	background: #00bf5f;
+	color: #fff;
+}
+
+.quizValidationLayer a.quizValidate {
+	pointer-events: none;
+	opacity: 0.5;
+	background: #607d8b;
+	border-radius: 2px;
+}
+
+.quizResponses:has(input[type="checkbox"]:checked)
+	+ .quizValidationLayer
+	a.quizValidate {
+	pointer-events: visible;
+	opacity: 1;
+	background: var(--primary);
+}
+
+/* inputs */
+
+.quizResponses {
+	margin-top: 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	padding: 0 85px 0 0;
+	min-height: 128px;
+}
+
+input[type="checkbox"] {
+	opacity: 0;
+}
+input[type="checkbox"] + label {
+	cursor: pointer;
+	position: relative;
+}
+label:hover {
+	color: #fff;
+}
+
+input[type="checkbox"] + label:before {
+	content: "";
+	background: #607d8b;
+	width: 20px;
+	height: 20px;
+	display: inline-block;
+	top: 2px;
+	position: relative;
+	margin-right: 5px;
+	border-radius: 2px;
+}
+
+input[type="checkbox"]:checked + label:before {
+	background: #4caf50;
+	background: var(--primary);
+}
+input[type="checkbox"]:checked + label:after,
+span.question.thisCorrect label:after {
+	border: 2px solid #fff;
+	border-color: #fff0 #fff0 #fff #fff;
+	border-width: 0 0 3px 3px;
+	content: "";
+	position: absolute;
+	width: 10px;
+	height: 6px;
+	left: 4px;
+	top: 2px;
+	transform: rotate(-45deg);
+	border-radius: 2px;
+}
+
+span.question.thisCorrect label:before {
+	background: var(--error);
+}

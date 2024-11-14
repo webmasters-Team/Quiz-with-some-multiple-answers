@@ -1,0 +1,215 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webmasters small projects</title>
+</head>
+<link rel="stylesheet" href="style.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<body>
+    <div class="quizContainerPanel">
+        <h2>CUBE MOVIE QUIZ</H2>
+    
+        <!-- Intro -->
+        <div class="quizIntroPanel">
+            <p class="quizUserName">Welcome!</p>
+            <p>Simple quiz based on the movie 'Cube'.</p>
+            <p><a class="quizPlayGame" href="#">START QUIZ</a></p>
+        </div>
+    
+        <!-- Navigation -->
+        <div class="navQuestion">
+            <span class="quizActiveQuestion">1</span>
+            <span>2</span>
+            <span>3</span>
+            <span>4</span>
+            <span>5</span>
+            <span>6</span>
+            <span>7</span>
+            <span>8</span>
+            <span>9</span>
+            <span>10</span>
+        </div>
+    
+        <!-- Question 1 -->
+        <div class="quizPanel Question01">
+            <p><strong>1:</strong>What nationality is the movie "CUBE" from?</p>
+            <div class="quizResponses">
+                <span class="question"><input name="question1" id="question1a" value="english" data-value="0" type="checkbox" /> <label for="question1a">English</label> </span>
+                <span class="question"><input name="question1" id="question1b" value="canadian" data-value="1" type="checkbox" /> <label for="question1b">Canadian</label> </span>
+                <span class="question"><input name="question1" id="question1c" value="united-states" data-value="0" type="checkbox" /> <label for="question1c">United States</label> </span>
+            </div>
+            <div class="quizValidationLayer">
+                <div class="quizCorrect">CORRECT</div>
+                <div class="quizFail">ERROR</div>
+                <a class="quizValidate" href="#">VALIDATE</a>
+                <a class="quizContinue" href="#">CONTINUE</a>
+            </div>
+        </div>
+    
+        <!-- Question 2 -->
+        <div class="quizPanel Question02">
+            <p><strong>2:</strong> Which of the following is NOT a character in the movie?</p>
+            <div class="quizResponses">
+                <span class="question"><input name="question2" id="question2a" value="alderson" data-value="0" type="checkbox" /> <label for="question2a">Alderson</label> </span>
+                <span class="question"><input name="question2" id="question2b" value="robson" data-value="1" type="checkbox" /> <label for="question2b">Robson</label> </span>
+                <span class="question"><input name="question2" id="question2d" value="somerwell" data-value="1" type="checkbox" /> <label for="question2d">Somerwell</label> </span>
+                <span class="question"><input name="question2" id="question2c" value="rennes" data-value="0" type="checkbox" /> <label for="question2c">Rennes</label> </span>
+            </div>
+            <div class="quizValidationLayer">
+                <div class="quizCorrect">CORRECT</div>
+                <div class="quizFail">ERROR</div>
+                <a class="quizValidate" href="#">VALIDATE</a>
+                <a class="quizContinue" href="#">CONTINUE</a>
+            </div>
+        </div>
+    
+        <!-- Question 3 -->
+        <div class="quizPanel Question03">
+            <p><strong>3:</strong> How many different sets were needed to film this movie?</p>
+            <div class="quizResponses">
+                <span class="question"><input name="question3" id="question3a" value="1" data-value="1" type="checkbox" /> <label for="question3a">1</label> </span>
+                <span class="question"><input name="question3" id="question3b" value="5" data-value="0" type="checkbox" /> <label for="question3b">5</label> </span>
+                <span class="question"><input name="question3" id="question3c" value="8" data-value="0" type="checkbox" /> <label for="question3c">8</label> </span>
+                <span class="question"><input name="question3" id="question3d" value="14" data-value="0" type="checkbox" /> <label for="question3d">14</label> </span>
+            </div>
+            <div class="quizValidationLayer">
+                <div class="quizCorrect">CORRECT</div>
+                <div class="quizFail">ERROR</div>
+                <a class="quizValidate" href="#">VALIDATE</a>
+                <a class="quizContinue" href="#">CONTINUE</a>
+            </div>
+        </div>
+    
+        <!-- Question 4 -->
+        <div class="quizPanel Question04">
+            <p><strong>4:</strong> What was Quentin's profession before being placed in the cube?</p>
+            <div class="quizResponses">
+                <span class="question"><input name="question4" id="question4a" value="architect" data-value="0" type="checkbox" /> <label for="question4a">Architect</label> </span>
+                <span class="question"><input name="question4" id="question4b" value="doctor" data-value="0" type="checkbox" /> <label for="question4b">Doctor</label> </span>
+                <span class="question"><input name="question4" id="question4c" value="police-officer" data-value="1" type="checkbox" /> <label for="question4c">Police Officer</label> </span>
+                <span class="question"><input name="question4" id="question4d" value="student" data-value="0" type="checkbox" /> <label for="question4d">Student</label> </span>
+            </div>
+            <div class="quizValidationLayer">
+                <div class="quizCorrect">CORRECT</div>
+                <div class="quizFail">ERROR</div>
+                <a class="quizValidate" href="#">VALIDATE</a>
+                <a class="quizContinue" href="#">CONTINUE</a>
+            </div>
+        </div>
+    
+        <!-- Question 5 -->
+        <div class="quizPanel Question05">
+            <p><strong>5:</strong> What was the color of the room that Quentin, Holloway, Worth and Leaven all woke up in?</p>
+            <div class="quizResponses">
+                <span class="question"><input name="question5" id="question5a" value="blue" data-value="0" type="checkbox" /> <label for="question5a">Blue</label> </span>
+                <span class="question"><input name="question5" id="question5b" value="white" data-value="1" type="checkbox" /> <label for="question5b">White</label> </span>
+                <span class="question"><input name="question5" id="question5c" value="green" data-value="0" type="checkbox" /> <label for="question5c">Green</label> </span>
+                <span class="question"><input name="question5" id="question5d" value="red" data-value="0" type="checkbox" /> <label for="question5d">Red</label> </span>
+            </div>
+            <div class="quizValidationLayer">
+                <div class="quizCorrect">CORRECT</div>
+                <div class="quizFail">ERROR</div>
+                <a class="quizValidate" href="#">VALIDATE</a>
+                <a class="quizContinue" href="#">CONTINUE</a>
+            </div>
+        </div>
+    
+        <!-- Question 6 -->
+        <div class="quizPanel Question06">
+            <p><strong>6:</strong> What did the group use to test for motion-activated traps?</p>
+            <div class="quizResponses">
+                <span class="question"><input name="question6" id="question6a" value="hats" data-value="0" type="checkbox" /> <label for="question6a">Hats</label> </span>
+                <span class="question"><input name="question6" id="question6b" value="buttons" data-value="0" type="checkbox" /> <label for="question6b">Buttons</label> </span>
+                <span class="question"><input name="question6" id="question6c" value="boots" data-value="1" type="checkbox" /> <label for="question6c">Boots</label> </span>
+                <span class="question"><input name="question6" id="question6d" value="pants" data-value="0" type="checkbox" /> <label for="question6d">Pants</label> </span>
+            </div>
+            <div class="quizValidationLayer">
+                <div class="quizCorrect">CORRECT</div>
+                <div class="quizFail">ERROR</div>
+                <a class="quizValidate" href="#">VALIDATE</a>
+                <a class="quizContinue" href="#">CONTINUE</a>
+            </div>
+        </div>
+    
+        <!-- Question 7 -->
+        <div class="quizPanel Question07">
+            <p><strong>7:</strong> Which of the characters helped build the cube?</p>
+            <div class="quizResponses">
+                <span class="question"><input name="question7" id="question7a" value="rennes" data-value="0" type="checkbox" /> <label for="question7a">Rennes</label> </span>
+                <span class="question"><input name="question7" id="question7b" value="worth" data-value="1" type="checkbox" /> <label for="question7b">Worth</label> </span>
+                <span class="question"><input name="question7" id="question7c" value="holloway" data-value="0" type="checkbox" /> <label for="question7c">Holloway</label> </span>
+                <span class="question"><input name="question7" id="question7d" value="leaven" data-value="0" type="checkbox" /> <label for="question7d">Leaven</label> </span>
+            </div>
+            <div class="quizValidationLayer">
+                <div class="quizCorrect">CORRECT</div>
+                <div class="quizFail">ERROR</div>
+                <a class="quizValidate" href="#">VALIDATE</a>
+                <a class="quizContinue" href="#">CONTINUE</a>
+            </div>
+        </div>
+    
+        <!-- Question 8 -->
+        <div class="quizPanel Question08">
+            <p><strong>8:</strong> Who is killed in the movie?</p>
+            <div class="quizResponses">
+                <span class="question"><input name="question8" id="question8a" value="rennes" data-value="1" type="checkbox" /> <label for="question8a">Rennes</label> </span>
+                <span class="question"><input name="question8" id="question8b" value="alderson" data-value="1" type="checkbox" /> <label for="question8b">Alderson</label> </span>
+                <span class="question"><input name="question8" id="question8c" value="kazan" data-value="0" type="checkbox" /> <label for="question8c">Kazan</label> </span>
+                <span class="question"><input name="question8" id="question8d" value="leaven" data-value="1" type="checkbox" /> <label for="question8d">Leaven</label> </span>
+            </div>
+            <div class="quizValidationLayer">
+                <div class="quizCorrect">CORRECT</div>
+                <div class="quizFail">ERROR</div>
+                <a class="quizValidate" href="#">VALIDATE</a>
+                <a class="quizContinue" href="#">CONTINUE</a>
+            </div>
+        </div>
+    
+        <!-- Question 9 -->
+        <div class="quizPanel Question09">
+            <p><strong>9:</strong> Which of the following characters are women?</p>
+            <div class="quizResponses">
+                <span class="question"><input name="question9" id="question9a" value="holloway" data-value="1" type="checkbox" /> <label for="question9a">Holloway</label> </span>
+                <span class="question"><input name="question9" id="question9b" value="kazan" data-value="0" type="checkbox" /> <label for="question9b">Kazan</label> </span>
+                <span class="question"><input name="question9" id="question9c" value="leaven" data-value="1" type="checkbox" /> <label for="question9c">Leaven</label> </span>
+                <span class="question"><input name="question9" id="question9d" value="worth" data-value="0" type="checkbox" /> <label for="question9d">Worth</label> </span>
+            </div>
+            <div class="quizValidationLayer">
+                <div class="quizCorrect">CORRECT</div>
+                <div class="quizFail">ERROR</div>
+                <a class="quizValidate" href="#">VALIDATE</a>
+                <a class="quizContinue" href="#">CONTINUE</a>
+            </div>
+        </div>
+    
+        <!-- Question 10 -->
+        <div class="quizPanel Question10">
+            <p><strong>10:</strong> Who was the only character to escape the cube?</p>
+            <div class="quizResponses">
+                <span class="question"><input name="question10" id="question10a" value="quentin" data-value="0" type="checkbox" /> <label for="question10a">Quentin</label> </span>
+                <span class="question"><input name="question10" id="question10b" value="worth" data-value="0" type="checkbox" /> <label for="question10b">Worth</label> </span>
+                <span class="question"><input name="question10" id="question10c" value="kazan" data-value="1" type="checkbox" /> <label for="question10c">Kazan</label> </span>
+                <span class="question"><input name="question10" id="question10d" value="leaven" data-value="0" type="checkbox" /> <label for="question10d">Leaven</label> </span>
+            </div>
+            <div class="quizValidationLayer">
+                <div class="quizCorrect">CORRECT</div>
+                <div class="quizFail">ERROR</div>
+                <a class="quizValidate" href="#">VALIDATE</a>
+                <a class="quizContinue" href="#">CONTINUE</a>
+            </div>
+        </div>
+    
+        <!-- Results -->
+        <div class="quizPanelResult">
+            <div class="TextFinalPanel">
+                <p>Thanks for quizing!</p>
+            </div>
+            <div class="quizTextResult">&#160;</div>
+            <a class="quizReload" target="_top" href="https://codepen.io/josetxu/pen/rNXBEEr">RELOAD</a>
+        </div>
+    
+    </div>
+<script src="script.js"></script>    
+</body>
+</html>
